@@ -1,0 +1,12 @@
+.container{
+    text-align: center;
+    color: #ffffff;
+}
+
+.container__icon{
+    font-size: 4rem;
+}
+
+.container__h2{
+    margin-bottom: 1rem;
+}

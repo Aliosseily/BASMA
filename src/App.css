@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container-margin{
+  margin: 4rem;
+}
+@media screen and (max-width: 900px) {
+  .container-margin{
+    margin: 4rem 0;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p{
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.gradient__bg{   
+
+   /* ff 3.6+ */
+   background:-moz-linear-gradient(152deg, rgba(95, 3, 210, 1) 0%, rgba(127, 17, 223, 1) 79%); 
+
+   /* safari 5.1+,chrome 10+ */
+   background:-webkit-linear-gradient(152deg, rgba(95, 3, 210, 1) 0%, rgba(127, 17, 223, 1) 79%);
+
+   /* opera 11.10+ */
+   background:-o-linear-gradient(152deg, rgba(95, 3, 210, 1) 0%, rgba(127, 17, 223, 1) 79%);
+
+   /* ie 6-9 */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7F11DF', endColorstr='#5F03D2', GradientType=1 );
+
+   /* ie 10+ */
+   background:-ms-linear-gradient(152deg, rgba(95, 3, 210, 1) 0%, rgba(127, 17, 223, 1) 79%);
+
+   /* global 94%+ browsers support */
+   background:linear-gradient(152deg, rgba(95, 3, 210, 1) 0%, rgba(127, 17, 223, 1) 79%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.scale-up-center{-webkit-animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both}
+@-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}
